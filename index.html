@@ -1,7 +1,89 @@
 <html>
+<Title>ok</title>
+
 <head>
+	<style>
+		body {
+			background-color: lightblue;
+		}
+
+		.myDiv {
+			border: 5px outset green;
+			background-color: darkblue;
+			text-align: center;
+			border-radius: 25px;
+		}
+
+		p,
+		h1,
+		h2,
+		h3,
+		form,
+		div {
+			color: white;
+			text-align: center;
+	</style>
 </head>
+
 <body>
-Testiä
+
+	<div class="myDiv">
+		<a href="portfolio.html">Portfolio.</a>
+		<p>Testailua</p>
+	</div>
+	<h1>Vastaukset:</h1>
+
+	<h2>1. Tyhjän tagin ei tarvitse käyttää lopetusta</h2>
+	<h2>2. Jotkin elementit eivät toimi jos käytetään isoja kirjaimia</h2>
+	<h2>3. </h2>
+
+	<h1>A</h1>
+	<h2>A</h2>
+	<h3>A</h3>
+
+	<p>Joo</p>
+
+	<img src="d.png" alt="Keittiö kuva">
+
+<a href="https://salpaus.fi/">Vilkaisethan sivuja!</a>
+
+<h1>KYSELY</h1>
+
+<form action="/action_page.php">
+  <label for="fname">Ikä:</label><br>
+  <input type="text" id="fname" name="fname" value="?"><br>
+  <label for="lname">Pituus:</label><br>
+  <input type="text" id="lname" name="lname" value="?"><br>
+   <label for="lname">Paino:</label><br>
+  <input type="text" id="lname" name="lname" value="?"><br>
+  
+  <input type="submit" value="Lähetä">
+</form>
+
+<p id="pulla">Pulla maistuu pahalle. :(</p>
+
+<button style="background-color: blue; color: white;"  onclick="Blue()">Blue</button>
+<button style="background-color: red; color: white;" onclick="Red()">Red</button>
+<button onclick="teksti()">Kosketappa minua</button>
+
+<script>
+// Sininen
+function Blue()
+    {
+document.getElementById("pulla").style.color = "blue";
+
+}
+// Punainen
+function Red()
+    {
+document.getElementById("pulla").style.color = "red";
+
+}
+// tekstin vaihto
+function teksti(){
+    document.getElementById("pulla").innerHTML = "Pulla maistuu hyvältä! :)";
+}
+</script>
+
 </body>
 </html>
