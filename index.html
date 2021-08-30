@@ -50,14 +50,12 @@
 <h1>KYSELY</h1>
 
 <form action="/action_page.php">
-  <label for="fname">Ikä:</label><br>
-  <input type="text" id="fname" name="fname" value="?"><br>
-  <label for="lname">Pituus:</label><br>
-  <input type="text" id="lname" name="lname" value="?"><br>
-   <label for="lname">Paino:</label><br>
-  <input type="text" id="lname" name="lname" value="?"><br>
-  
-  <input type="submit" value="Lähetä">
+  <input type="text" id="lname" name="lname"
+	placeholder="Etunimi" type="text"><br>
+  <input type="text" id="lname" name="lname"
+	placeholder="Sukunimi" type="text"><br>
+  <input type="text" id="lname" name="lname"
+    placeholder="Sukunimi" type="text"><br>
 </form>
 
 <p id="pulla">Pulla maistuu pahalle. :(</p>
@@ -65,6 +63,9 @@
 <button style="background-color: blue; color: white;"  onclick="Blue()">Blue</button>
 <button style="background-color: red; color: white;" onclick="Red()">Red</button>
 <button onclick="teksti()">Kosketappa minua</button>
+
+<p id="age"></p>
+<p id="looppi"></p>
 
 <script>
 // Sininen
@@ -83,6 +84,18 @@ document.getElementById("pulla").style.color = "red";
 function teksti(){
     document.getElementById("pulla").innerHTML = "Pulla maistuu hyvältä! :)";
 }
+//looppi
+let text = ""
+let i = 0;
+
+do {
+  text += "<br>Huhuu?! ";
+  i++;
+}
+while (i < 5);  
+
+document.getElementById("looppi").innerHTML = text;
+
 </script>
 
 </body>
