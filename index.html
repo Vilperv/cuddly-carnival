@@ -35,7 +35,6 @@
 
 	<h2>1. Tyhjän tagin ei tarvitse käyttää lopetusta</h2>
 	<h2>2. Jotkin elementit eivät toimi jos käytetään isoja kirjaimia</h2>
-	<h2>3. </h2>
 
 	<h1>A</h1>
 	<h2>A</h2>
@@ -54,8 +53,6 @@
 	placeholder="Etunimi" type="text"><br>
   <input type="text" id="lname" name="lname"
 	placeholder="Sukunimi" type="text"><br>
-  <input type="text" id="lname" name="lname"
-    placeholder="Sukunimi" type="text"><br>
 </form>
 
 <p id="pulla">Pulla maistuu pahalle. :(</p>
@@ -84,6 +81,7 @@ document.getElementById("pulla").style.color = "red";
 function teksti(){
     document.getElementById("pulla").innerHTML = "Pulla maistuu hyvältä! :)";
 }
+
 //looppi
 let text = ""
 let i = 0;
@@ -96,6 +94,22 @@ while (i < 5);
 
 document.getElementById("looppi").innerHTML = text;
 
+//iän varmistus
+function ikävarmistus() {
+  var age = prompt("Ikäsi?:", "");
+  if(isNaN(parseFloat(age))) {
+    alert("Et kertonut ikääsi");
+  }
+  else {
+    var status = (age >= 18) ? "aikuinen" : "nuori";
+      if(status == "nuori") {
+        alert("Olet liian nuori :)");
+      } else if (status == "aikuinen") {
+	    alert("Pääsit sisälle onnistuneesti");
+      } 
+  }
+}
+ikävarmistus();
 </script>
 
 </body>
