@@ -31,10 +31,14 @@
 		<a href="portfolio.html">Portfolio.</a>
 		<p>Testailua</p>
 	</div>
+	
+	<h1 id="tervetuloa"></h1>
+	
 	<h1>Vastaukset:</h1>
 
 	<h2>1. Tyhjän tagin ei tarvitse käyttää lopetusta</h2>
 	<h2>2. Jotkin elementit eivät toimi jos käytetään isoja kirjaimia</h2>
+	<h2>3. </h2>
 
 	<h1>A</h1>
 	<h2>A</h2>
@@ -45,15 +49,6 @@
 	<img src="d.png" alt="Keittiö kuva">
 
 <a href="https://salpaus.fi/">Vilkaisethan sivuja!</a>
-
-<h1>KYSELY</h1>
-
-<form action="/action_page.php">
-  <input type="text" id="lname" name="lname"
-	placeholder="Etunimi" type="text"><br>
-  <input type="text" id="lname" name="lname"
-	placeholder="Sukunimi" type="text"><br>
-</form>
 
 <p id="pulla">Pulla maistuu pahalle. :(</p>
 
@@ -105,11 +100,21 @@ function ikävarmistus() {
       if(status == "nuori") {
         alert("Olet liian nuori :)");
       } else if (status == "aikuinen") {
-	    alert("Pääsit sisälle onnistuneesti");
+	    alert("Olet tarpeeksi vanha :)");
       } 
   }
 }
 ikävarmistus();
+
+var vieras = prompt("Millä nimellä sinua kutsutaan?", "");
+
+if (vieras!= null) {
+
+    document.getElementById("tervetuloa").innerHTML =
+
+    "Moikka " + vieras + "!";
+
+}
 </script>
 
 </body>
