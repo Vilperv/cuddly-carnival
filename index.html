@@ -106,13 +106,15 @@ function ikävarmistus() {
 }
 ikävarmistus();
 
-var vieras = prompt("Millä nimellä sinua kutsutaan?", "");
+var vieras = prompt("Mikä on sinun nimesi?", "");
 
-if (vieras!= null) {
+var sukunimi = prompt("Mikä on sinun sukunimesi?", "");
+
+if (vieras, sukunimi!= null) {
 
     document.getElementById("tervetuloa").innerHTML =
 
-    "Moikka " + vieras + "!";
+    "Moikka " + vieras + " "+ sukunimi + "!";
 
 }
 </script>
